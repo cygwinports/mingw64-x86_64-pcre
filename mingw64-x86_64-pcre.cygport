@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-pcre"
-VERSION=8.36
+VERSION=8.37
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Perl Compatible Regular Expressions for Win64 toolchain"
@@ -16,8 +16,6 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 SRC_DIR="pcre-${VERSION}"
 PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.21-multilib.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.36-Fix-bug-when-there-are-unset-groups-prior-to-ACCEPT-.patch
-	http://pkgs.fedoraproject.org/cgit/pcre.git/plain/pcre-8.36-Fix-zero-repeat-assertion-condition-bug.patch
 "
 
 NO_AUTOHEADER=1
