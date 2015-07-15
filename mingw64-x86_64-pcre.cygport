@@ -3,7 +3,7 @@ inherit cross
 
 NAME="mingw64-x86_64-pcre"
 VERSION=8.37
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="Perl Compatible Regular Expressions for Win64 toolchain"
 DESCRIPTION="This package does NOT contain cygwin binaries.  Instead, it
