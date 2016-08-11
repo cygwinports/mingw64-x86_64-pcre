@@ -2,8 +2,8 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-pcre"
-VERSION=8.38
-RELEASE=3
+VERSION=8.39
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Perl Compatible Regular Expressions for Win64 toolchain"
 DESCRIPTION="This package does NOT contain cygwin binaries.  Instead, it
@@ -16,22 +16,7 @@ SRC_URI="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-${VERSION}.t
 SRC_DIR="pcre-${VERSION}"
 PATCH_URI="
 	fedora/pcre-8.21-multilib.patch
-	fedora/pcre-8.38-Fix-auto-callout-comment-bug.patch
-	fedora/pcre-8.38-Fix-negated-POSIX-class-within-negated-overall-class.patch
-	fedora/pcre-8.38-Fix-bug-for-isolated-E-between-an-item-and-its-quali.patch
-	fedora/pcre-8.38-Give-error-for-regexec-with-pmatch-NULL-and-REG_STAR.patch
-	fedora/pcre-8.38-Allow-for-up-to-32-bit-numbers-in-the-ordin-function.patch
-	fedora/pcre-8.38-Fix-Q-E-before-qualifier-bug-when-auto-callouts-are-.patch
-	fedora/pcre-8.38-Fix-x-bug-when-pattern-starts-with-white-space-and-x.patch
-	fedora/pcre-8.38-Fix-copy-named-substring-bug.patch
-	fedora/pcre-8.38-Fix-by-hacking-another-length-computation-issue.patch
-	fedora/pcre-8.38-Fix-get_substring_list-bug-when-K-is-used-in-an-asse.patch
-	fedora/pcre-8.38-Fix-pcretest-bad-behaviour-for-callout-in-lookbehind.patch
-	fedora/pcre-8.38-Fix-workspace-overflow-for-ACCEPT-with-deeply-nested.patch
-	fedora/pcre-8.38-Yet-another-duplicate-name-bugfix-by-overestimating-.patch
-	fedora/pcre-8.38-Fix-pcretest-loop-for-global-matching-with-an-ovecto.patch
-	fedora/pcre-8.38-Fix-non-diagnosis-of-missing-assertion-after-C.patch
-	fedora/pcre-8.38-Fix-typo-in-pcre_study.patch
+	fedora/pcre-8.39-Fix-bad-interaction-between-o-and-M-in-pcregrep.patch
 "
 
 NO_AUTOHEADER=1
