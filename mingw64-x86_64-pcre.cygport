@@ -3,7 +3,7 @@ inherit cross
 
 NAME="mingw64-x86_64-pcre"
 VERSION=8.40
-RELEASE=2
+RELEASE=3
 CATEGORY="Devel"
 SUMMARY="Perl Compatible Regular Expressions for Win64 toolchain"
 DESCRIPTION="This package does NOT contain cygwin binaries.  Instead, it
@@ -24,6 +24,9 @@ PATCH_URI="
 	fedora/pcre-8.40-Make-pcretest-check-size-of-O-argument.patch
 	fedora/pcre-8.40-Minor-doc-update.patch
 	fedora/pcre-8.40-Fix-Unicode-property-crash-for-32-bit-characters-gre.patch
+	fedora/pcre-8.40-Fix-DFA-match-handling-of-possessive-repeated-charac.patch
+	fedora/pcre-8.40-Fix-typo-leading-to-possible-buffer-overflow-in-pcre.patch
+	fedora/pcre-8.40-Fix-character-type-detection-when-32-bit-and-UCP-are.patch
 "
 
 NO_AUTOHEADER=1
